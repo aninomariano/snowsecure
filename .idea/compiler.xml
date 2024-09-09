@@ -12,14 +12,19 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="snowsecure" />
+        <module name="application" />
+        <module name="domain" />
+        <module name="infraestructure" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="21" />
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="snowsecure" options="-parameters" />
+      <module name="application" options="-parameters" />
+      <module name="domain" options="-parameters" />
+      <module name="infraestructure" options="-parameters" />
+      <module name="snowsecure" options="" />
     </option>
   </component>
 </project>
